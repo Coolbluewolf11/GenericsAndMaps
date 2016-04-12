@@ -62,8 +62,6 @@ public class Bike implements Comparable{
         this.serialNum = serialNum;
     }
     private int serialNum;
-    
-    
 
     @Override
     public int compareTo(Object o) {
