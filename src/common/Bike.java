@@ -63,9 +63,7 @@ public class Bike implements Comparable{
     }
     private int serialNum;
     
-    public int compare(Bike tarbike){
-        
-    }
+    
 
     @Override
     public int compareTo(Object o) {
