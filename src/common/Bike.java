@@ -68,11 +68,12 @@ public class Bike implements Comparable{
     }
 
     @Override
-    public int compareTo(Bike o) {
+    public int compareTo(Object o) {
         int compare;
-        if(this.serialNum<o.getSerialNum()){
+        Bike tarbike = (Bike)o;
+        if(this.serialNum<tarbike.getSerialNum()){
             compare = 1;
-        }else if(this.serialNum == o.getSerialNum()){
+        }else if(this.serialNum == tarbike.getSerialNum()){
             compare = 0;
         }else{
             compare = -1;
