@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * @author Tim
  */
-public class Bike {
+public class Bike implements Comparable{
     private String manufacturer;
 
     @Override
@@ -64,14 +64,18 @@ public class Bike {
     private int serialNum;
     
     public int compare(Bike tarbike){
+        
+    }
+
+    @Override
+    public int compareTo(Bike o) {
         int compare;
-        if(this.serialNum<tarbike.getSerialNum()){
+        if(this.serialNum<o.getSerialNum()){
             compare = 1;
-        }else if(this.serialNum == tarbike.getSerialNum()){
+        }else if(this.serialNum == o.getSerialNum()){
             compare = 0;
         }else{
             compare = -1;
         }
-        return compare;
-    }
+        return compare;    }
 }
