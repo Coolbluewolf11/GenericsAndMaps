@@ -23,7 +23,7 @@ public class Lab3 {
         employees.put(e2.getSsn(),e2);
         employees.put(e3.getSsn(),e3);
         employees.put(e4.getSsn(),e4);
-        Employee retrieved = employee.get("444-11-1111");
+        Employee retrieved = Employee.get("444-11-1111");
         System.out.println(retrieved);
     }
 }
