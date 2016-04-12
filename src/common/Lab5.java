@@ -16,19 +16,15 @@ import java.util.TreeSet;
  */
 public class Lab5 {
     Employee e1= new Employee(1,"Smith","Bob","111-11-1111");
-        Employee e2= new Employee(2,"Jones","Bob","222-11-1111");
-        Employee e3= new Employee(3,"Smith","Bob","333-11-1111");
-        Employee e4= new Employee(4,"Baylee","Bob","444-11-1111");
-        Set<Employee> employees = new TreeSet<>();
-        employees.add(e1);
-        employees.add(e2);
-        employees.add(e3);
-        employees.add(e4);
-        Employee retrieved = employees.get("444-11-1111");
-        
-        Set<String> keys = employees.keySet();
-        for(String key : keys){
-            Employee e = employees.get(key);
-            System.out.println(retrieved);
-        }
+    Employee e2= new Employee(2,"Jones","Bob","222-11-1111");
+    Employee e3= new Employee(3,"Smith","Bob","333-11-1111");
+    Employee e4= new Employee(4,"Baylee","Bob","444-11-1111");
+    Set<Employee> employees = new TreeSet<>();
+    employees.add(e1);
+    employees.add(e2);
+    employees.add(e3);
+    employees.add(e4);
+    for(Employee emp: employees){
+        system.out.println(emp)
+    }
 }
